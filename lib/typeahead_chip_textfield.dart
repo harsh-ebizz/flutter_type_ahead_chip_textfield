@@ -88,15 +88,7 @@ class CustomTypeAheadChipTextFieldState<T> extends State<CustomTypeAheadChipText
                       width: 1, color: widget.borderColor ?? Colors.grey)),
               fillColor: Colors.white,
               filled: widget.isFilled ?? true,
-              prefixIconConstraints: widget.imageIcon.isNotEmpty
-                  ? const BoxConstraints(minHeight: 18, minWidth: 18)
-                  : null,
-              prefixIcon: widget.imageIcon.isNotEmpty
-                  ? Padding(
-                      padding: const EdgeInsets.only(right: 6),
-                      child: widget.prefixIcon,
-                    )
-                  : null,
+              prefixIcon: widget.prefixIcon,
               labelStyle: TextStyle(
                 fontSize: 12,
                 color: widget.labelColor,
